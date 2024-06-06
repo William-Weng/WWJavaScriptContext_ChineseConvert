@@ -7,11 +7,16 @@ extension WWJavaScriptContext {
     
     open class ChineseConvert: NSObject {
         
+        public enum ConvertType {
+            case cn                                     // 轉成簡體中文
+            case tw                                     // 轉成正體中文
+        }
+        
         /// js函數名稱類型
         enum FunctionNameType {
             
-            case simplifiedChinese(_ source: String)
-            case traditionalChinese(_ source: String)
+            case simplifiedChinese(_ source: String)    // 轉成簡體中文js函數名稱
+            case traditionalChinese(_ source: String)   // 轉成正體中文js函數名稱
             
             /// js函數名稱
             /// - Returns: String
@@ -39,24 +44,19 @@ extension WWJavaScriptContext {
 // MARK: - 公開函數
 public extension WWJavaScriptContext.ChineseConvert {
     
-    /// [繁體 => 簡體](https://cdn.jsdelivr.net/npm/opencc-js@1.0.5/dist/umd/full.js)
+    /// [繁體 <=> 簡體](https://cdn.jsdelivr.net/npm/opencc-js@1.0.5/dist/umd/full.js)
     /// - Parameters:
-    ///   - context: WWJavaScriptContext
-    ///   - source: String
-    /// - Returns: JSValue?
-    func simplifiedChinese(source: String?) -> String? {
-        guard let source = source else { return nil }
-        return convertSource(with: .simplifiedChinese(source))?.toString()
-    }
-    
-    /// [簡體 => 正體](https://github.com/nk2028/opencc-js)
-    /// - Parameters:
-    ///   - context: WWJavaScriptContext
-    ///   - source: String?
-    /// - Returns: JSValue?
-    func traditionalChinese(source: String?) -> String? {
-        guard let source = source else { return nil }
-        return convertSource(with: .traditionalChinese(source))?.toString()
+    ///   - text: [String?](https://github.com/nk2028/opencc-js)
+    ///   - type: ConvertType
+    /// - Returns: String?
+    func convert(_ text: String?, to type: ConvertType = .cn) -> String? {
+        
+        guard let text = text else { return nil }
+
+        switch type {
+        case .tw: return convertSource(with: .traditionalChinese(text))?.toString()
+        case .cn: return convertSource(with: .simplifiedChinese(text))?.toString()
+        }
     }
 }
 

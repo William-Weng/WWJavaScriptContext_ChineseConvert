@@ -5,8 +5,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/William-Weng/WWJavaScriptContext",
       "state" : {
-        "revision" : "983111177d7b64ef90f0c77d4db928187b9d756d",
-        "version" : "1.0.1"
+        "revision" : "1959bc6f5a18f12a60c294142aafca05b02fb087",
+        "version" : "1.0.3"
       }
     },
     {
@@ -14,8 +14,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/William-Weng/WWJavaScriptContext_ChineseConvert",
       "state" : {
-        "branch" : "main",
-        "revision" : "72e579d1718d77ed3e27c33a7ff411a93063c7c1"
+        "revision" : "05cd1fd8be0490b0935a73a44239e79d50cfdd7e",
+        "version" : "1.0.1"
       }
     },
     {
@@ -23,8 +23,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/William-Weng/WWPrint",
       "state" : {
-        "revision" : "6b70fabaa1dbeac95b224384819e231a1220900a",
-        "version" : "1.2.0"
+        "revision" : "8f5928f5d36624d77f8fc563fd8e31a59cfac6b6",
+        "version" : "1.3.1"
       }
     }
   ],

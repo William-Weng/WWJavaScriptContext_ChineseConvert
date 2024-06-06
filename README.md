@@ -10,15 +10,14 @@
 ### [Installation with Swift Package Manager](https://medium.com/彼得潘的-swift-ios-app-開發問題解答集/使用-spm-安裝第三方套件-xcode-11-新功能-2c4ffcf85b4b)
 ```js
 dependencies: [
-    .package(url: "https://github.com/William-Weng/WWJavaScriptContext_ChineseConvert.git", .upToNextMajor(from: "1.0.0"))
+    .package(url: "https://github.com/William-Weng/WWJavaScriptContext_ChineseConvert.git", .upToNextMajor(from: "1.1.0"))
 ]
 ```
 
 ### Function - 可用函式
 |函式|功能|
 |-|-|
-|simplifiedChinese(source:)|繁體 => 簡體|
-|traditionalChinese(source:)|簡體 => 正體|
+|convert(_:to:)|繁體 <=> 簡體|
 
 ### Example
 ```swift
@@ -37,8 +36,8 @@ final class ViewController: UIViewController {
     /// 簡體 => 正體
     /// - Parameter sender: UIBarButtonItem
     @IBAction func convert_zh_TW(_ sender: UIBarButtonItem) {
-                
-        let traditionalChinese = WWJavaScriptContext.ChineseConvert.shared.traditionalChinese(source: myLabel.text)
+        
+        let traditionalChinese = WWJavaScriptContext.ChineseConvert.shared.convert(myLabel.text, to: .tw)
         myLabel.text = traditionalChinese
     }
     
@@ -46,8 +45,8 @@ final class ViewController: UIViewController {
     /// - Parameter sender: UIBarButtonItem
     @IBAction func convert_zh_CN(_ sender: UIBarButtonItem) {
         
-        let simplifiedChinese = WWJavaScriptContext.ChineseConvert.shared.simplifiedChinese(source: myLabel.text)
-        myLabel.text = simplifiedChinese
+         let simplifiedChinese = WWJavaScriptContext.ChineseConvert.shared.convert(myLabel.text, to: .cn)
+         myLabel.text = simplifiedChinese
     }
 }
 ```

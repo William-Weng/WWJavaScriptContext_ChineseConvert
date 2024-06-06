@@ -20,8 +20,8 @@ final class ViewController: UIViewController {
     /// 簡體 => 正體
     /// - Parameter sender: UIBarButtonItem
     @IBAction func convert_zh_TW(_ sender: UIBarButtonItem) {
-                
-        let traditionalChinese = WWJavaScriptContext.ChineseConvert.shared.traditionalChinese(source: myLabel.text)
+        
+        let traditionalChinese = WWJavaScriptContext.ChineseConvert.shared.convert(myLabel.text, to: .tw)
         myLabel.text = traditionalChinese
     }
     
@@ -29,8 +29,8 @@ final class ViewController: UIViewController {
     /// - Parameter sender: UIBarButtonItem
     @IBAction func convert_zh_CN(_ sender: UIBarButtonItem) {
         
-        let simplifiedChinese = WWJavaScriptContext.ChineseConvert.shared.simplifiedChinese(source: myLabel.text)
-        myLabel.text = simplifiedChinese
+         let simplifiedChinese = WWJavaScriptContext.ChineseConvert.shared.convert(myLabel.text, to: .cn)
+         myLabel.text = simplifiedChinese
     }
 }
 
