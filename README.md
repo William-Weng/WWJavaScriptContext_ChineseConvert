@@ -17,7 +17,7 @@ dependencies: [
 ### Function - 可用函式
 |函式|功能|
 |-|-|
-|convert(_:to:)|繁體 <=> 簡體|
+|convert(text:to:)|繁體 <=> 簡體|
 
 ### Example
 ```swift
@@ -33,19 +33,15 @@ final class ViewController: UIViewController {
         super.viewDidLoad()
     }
     
-    /// 簡體 => 正體
-    /// - Parameter sender: UIBarButtonItem
     @IBAction func convert_zh_TW(_ sender: UIBarButtonItem) {
         
-        let traditionalChinese = WWJavaScriptContext.ChineseConvert.shared.convert(myLabel.text, to: .tw)
+        let traditionalChinese = WWJavaScriptContext.ChineseConvert.shared.convert(text: myLabel.text, to: .tw)
         myLabel.text = traditionalChinese
     }
-    
-    /// 繁體 => 簡體
-    /// - Parameter sender: UIBarButtonItem
+
     @IBAction func convert_zh_CN(_ sender: UIBarButtonItem) {
         
-         let simplifiedChinese = WWJavaScriptContext.ChineseConvert.shared.convert(myLabel.text, to: .cn)
+         let simplifiedChinese = WWJavaScriptContext.ChineseConvert.shared.convert(text: myLabel.text, to: .cn)
          myLabel.text = simplifiedChinese
     }
 }

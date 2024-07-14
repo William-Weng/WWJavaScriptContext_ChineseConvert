@@ -49,7 +49,7 @@ public extension WWJavaScriptContext.ChineseConvert {
     ///   - text: [String?](https://github.com/nk2028/opencc-js)
     ///   - type: ConvertType
     /// - Returns: String?
-    func convert(_ text: String?, to type: ConvertType = .cn) -> String? {
+    func convert(text: String?, to type: ConvertType = .cn) -> String? {
         
         guard let text = text else { return nil }
 

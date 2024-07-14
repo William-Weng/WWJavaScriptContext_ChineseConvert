@@ -7,16 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3DAC9C1927016E78006663C2 /* WWPrint in Frameworks */ = {isa = PBXBuildFile; productRef = 3DAC9C1827016E78006663C2 /* WWPrint */; };
 		3DBCD87426F198EF00522E3B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DBCD87326F198EF00522E3B /* AppDelegate.swift */; };
 		3DBCD87826F198EF00522E3B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DBCD87726F198EF00522E3B /* ViewController.swift */; };
 		3DBCD87B26F198EF00522E3B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DBCD87926F198EF00522E3B /* Main.storyboard */; };
 		3DBCD87D26F198F300522E3B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DBCD87C26F198F300522E3B /* Assets.xcassets */; };
 		3DBCD88026F198F300522E3B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DBCD87E26F198F300522E3B /* LaunchScreen.storyboard */; };
+		640BD0782C437A7E00490AB8 /* WWJavaScriptContext+ChineseConvert in Frameworks */ = {isa = PBXBuildFile; productRef = 640BD0772C437A7E00490AB8 /* WWJavaScriptContext+ChineseConvert */; };
+		640BD07B2C437B8600490AB8 /* WWJavaScriptContext+ChineseConvert in Frameworks */ = {isa = PBXBuildFile; productRef = 640BD07A2C437B8600490AB8 /* WWJavaScriptContext+ChineseConvert */; };
 		8130039027D5D18100436128 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8130038F27D5D18100436128 /* Constant.swift */; };
 		8130039227D5D19000436128 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8130039127D5D19000436128 /* Extension.swift */; };
 		81C944CC2C11449800D96AF6 /* WWJavaScriptContext+ChineseConvert in Frameworks */ = {isa = PBXBuildFile; productRef = 81C944CB2C11449800D96AF6 /* WWJavaScriptContext+ChineseConvert */; };
-		81C944CF2C11482C00D96AF6 /* WWJavaScriptContext+ChineseConvert in Frameworks */ = {isa = PBXBuildFile; productRef = 81C944CE2C11482C00D96AF6 /* WWJavaScriptContext+ChineseConvert */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,9 +36,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3DAC9C1927016E78006663C2 /* WWPrint in Frameworks */,
-				81C944CF2C11482C00D96AF6 /* WWJavaScriptContext+ChineseConvert in Frameworks */,
 				81C944CC2C11449800D96AF6 /* WWJavaScriptContext+ChineseConvert in Frameworks */,
+				640BD07B2C437B8600490AB8 /* WWJavaScriptContext+ChineseConvert in Frameworks */,
+				640BD0782C437A7E00490AB8 /* WWJavaScriptContext+ChineseConvert in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,9 +141,9 @@
 			);
 			name = Example;
 			packageProductDependencies = (
-				3DAC9C1827016E78006663C2 /* WWPrint */,
 				81C944CB2C11449800D96AF6 /* WWJavaScriptContext+ChineseConvert */,
-				81C944CE2C11482C00D96AF6 /* WWJavaScriptContext+ChineseConvert */,
+				640BD0772C437A7E00490AB8 /* WWJavaScriptContext+ChineseConvert */,
+				640BD07A2C437B8600490AB8 /* WWJavaScriptContext+ChineseConvert */,
 			);
 			productName = Example;
 			productReference = 3DBCD87026F198EF00522E3B /* Example.app */;
@@ -174,8 +174,7 @@
 			);
 			mainGroup = 3DBCD86726F198EF00522E3B;
 			packageReferences = (
-				3DAC9C1727016E78006663C2 /* XCRemoteSwiftPackageReference "WWPrint" */,
-				81C944CD2C11482C00D96AF6 /* XCRemoteSwiftPackageReference "WWJavaScriptContext_ChineseConvert" */,
+				640BD0792C437B8600490AB8 /* XCRemoteSwiftPackageReference "WWJavaScriptContext_ChineseConvert" */,
 			);
 			productRefGroup = 3DBCD87126F198EF00522E3B /* Products */;
 			projectDirPath = "";
@@ -419,37 +418,28 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		3DAC9C1727016E78006663C2 /* XCRemoteSwiftPackageReference "WWPrint" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/William-Weng/WWPrint";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 1.0.0;
-			};
-		};
-		81C944CD2C11482C00D96AF6 /* XCRemoteSwiftPackageReference "WWJavaScriptContext_ChineseConvert" */ = {
+		640BD0792C437B8600490AB8 /* XCRemoteSwiftPackageReference "WWJavaScriptContext_ChineseConvert" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/William-Weng/WWJavaScriptContext_ChineseConvert";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 1.0.1;
+				minimumVersion = 1.1.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		3DAC9C1827016E78006663C2 /* WWPrint */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 3DAC9C1727016E78006663C2 /* XCRemoteSwiftPackageReference "WWPrint" */;
-			productName = WWPrint;
-		};
-		81C944CB2C11449800D96AF6 /* WWJavaScriptContext+ChineseConvert */ = {
+		640BD0772C437A7E00490AB8 /* WWJavaScriptContext+ChineseConvert */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = "WWJavaScriptContext+ChineseConvert";
 		};
-		81C944CE2C11482C00D96AF6 /* WWJavaScriptContext+ChineseConvert */ = {
+		640BD07A2C437B8600490AB8 /* WWJavaScriptContext+ChineseConvert */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 81C944CD2C11482C00D96AF6 /* XCRemoteSwiftPackageReference "WWJavaScriptContext_ChineseConvert" */;
+			package = 640BD0792C437B8600490AB8 /* XCRemoteSwiftPackageReference "WWJavaScriptContext_ChineseConvert" */;
+			productName = "WWJavaScriptContext+ChineseConvert";
+		};
+		81C944CB2C11449800D96AF6 /* WWJavaScriptContext+ChineseConvert */ = {
+			isa = XCSwiftPackageProductDependency;
 			productName = "WWJavaScriptContext+ChineseConvert";
 		};
 /* End XCSwiftPackageProductDependency section */
