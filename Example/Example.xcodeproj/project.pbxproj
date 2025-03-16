@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3D39FC0D2D86BD7C0030C843 /* WWJavaScriptContext+ChineseConvert in Frameworks */ = {isa = PBXBuildFile; productRef = 3D39FC0C2D86BD7C0030C843 /* WWJavaScriptContext+ChineseConvert */; };
+		3D39FC102D86BDE50030C843 /* WWJavaScriptContext_ChineseConvert in Frameworks */ = {isa = PBXBuildFile; productRef = 3D39FC0F2D86BDE50030C843 /* WWJavaScriptContext_ChineseConvert */; };
 		3DBCD87426F198EF00522E3B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DBCD87326F198EF00522E3B /* AppDelegate.swift */; };
 		3DBCD87826F198EF00522E3B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DBCD87726F198EF00522E3B /* ViewController.swift */; };
 		3DBCD87B26F198EF00522E3B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DBCD87926F198EF00522E3B /* Main.storyboard */; };
@@ -34,7 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3D39FC0D2D86BD7C0030C843 /* WWJavaScriptContext+ChineseConvert in Frameworks */,
+				3D39FC102D86BDE50030C843 /* WWJavaScriptContext_ChineseConvert in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,7 +137,7 @@
 			);
 			name = Example;
 			packageProductDependencies = (
-				3D39FC0C2D86BD7C0030C843 /* WWJavaScriptContext+ChineseConvert */,
+				3D39FC0F2D86BDE50030C843 /* WWJavaScriptContext_ChineseConvert */,
 			);
 			productName = Example;
 			productReference = 3DBCD87026F198EF00522E3B /* Example.app */;
@@ -168,7 +168,7 @@
 			);
 			mainGroup = 3DBCD86726F198EF00522E3B;
 			packageReferences = (
-				3D39FC0B2D86BD7C0030C843 /* XCRemoteSwiftPackageReference "WWJavaScriptContext_ChineseConvert" */,
+				3D39FC0E2D86BDE50030C843 /* XCRemoteSwiftPackageReference "WWJavaScriptContext_ChineseConvert" */,
 			);
 			productRefGroup = 3DBCD87126F198EF00522E3B /* Products */;
 			projectDirPath = "";
@@ -414,7 +414,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		3D39FC0B2D86BD7C0030C843 /* XCRemoteSwiftPackageReference "WWJavaScriptContext_ChineseConvert" */ = {
+		3D39FC0E2D86BDE50030C843 /* XCRemoteSwiftPackageReference "WWJavaScriptContext_ChineseConvert" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/William-Weng/WWJavaScriptContext_ChineseConvert";
 			requirement = {
@@ -425,10 +425,10 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		3D39FC0C2D86BD7C0030C843 /* WWJavaScriptContext+ChineseConvert */ = {
+		3D39FC0F2D86BDE50030C843 /* WWJavaScriptContext_ChineseConvert */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 3D39FC0B2D86BD7C0030C843 /* XCRemoteSwiftPackageReference "WWJavaScriptContext_ChineseConvert" */;
-			productName = "WWJavaScriptContext+ChineseConvert";
+			package = 3D39FC0E2D86BDE50030C843 /* XCRemoteSwiftPackageReference "WWJavaScriptContext_ChineseConvert" */;
+			productName = WWJavaScriptContext_ChineseConvert;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
